@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layouts
+
+    </title>
+    <style>
+        .container{
+            background-color: lightgrey;
+            display: grid;
+            gap:10px;
+            justify-content: center;
+            grid-template-columns: 10vw  10vw   10vw 10vw 10vw 10vw 10vw ;
+            /* margin: 50px 0px; */
+            grid-template-rows:20vh 20vh 20vh ;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+        }
+        .container1{
+            background-color: lightgrey;
+            display: grid;
+            gap:10px;
+            justify-content: center;
+            grid-template-columns: 17vw  17vw   17vw   ;
+            /* margin: 50px 0px; */
+            grid-template-rows:30vh 30vh ;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+        }
+        .container3{
+            background-color: lightgrey;
+            display: grid;
+            gap:10px;
+            justify-content: center;
+            grid-template-columns: 20vw  20vw   20vw  20vw    ;
+            /* margin: 50px 0px; */
+            grid-template-rows:25vh 25vh 25vh;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+        }
+        .container4{
+            background-color: lightgrey;
+            display: grid;
+            gap:10px;
+            justify-content: center;
+            grid-template-columns: 17vw  17vw   17vw   ;
+            /* margin: 50px 0px; */
+            grid-template-rows:25vh 25vh 25vh;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+        }
+        .items{
+            background-color: blue;
+            text-align: center;
+            /* height:150px; */
+            /* width:200px; */
+        }
+       .it-2{
+        grid-row: 1/2;
+        grid-column: 2/4;
+        background-color: aqua;
+        
+       }
+       .it-4{
+        grid-row: 1/4;
+        grid-column: 5/6;
+       }
+       .it-5{
+        grid-row: 1/4;
+        grid-column: 6/7;
+       }
+       .it-6{
+        grid-row: 1/4;
+        grid-column: 7/8;
+       }
+       .it-7{
+        grid-row:2/4 ;
+        grid-column: 1/2;
+       }
+       .it-8{
+        grid-row: 2/4;
+        grid-column: 2/5;
+        background-color: aqua;
+       }
+
+
+       .no5{
+        grid-row: 2/4;
+        grid-column: 2/4;
+        background-color: aqua;
+       }
+       .numm1{
+        grid-row: 1/4;
+        grid-column: 1/2;
+        background-color: aqua;
+       }
+       .numm2{
+        grid-row: 1/2;
+        grid-column: 2/4;
+       
+       }
+       .numm3{
+        grid-row: 2/4;
+        grid-column: 4/5;
+       
+       }
+       body{
+        transition: background-color 0.5s;
+       }
+       h1{
+        transition: background-color 0.5s;
+       }
+    </style>
+</head>
+<body>
+    <h1 align="center"><button id="bttn" style="font-size: 30px;">Change color</button></h1>
+    <h1 class="kk">Layout-1</h1>
+    <div class="container">
+        <div class="items" style="background-color: brown;">item1</div>
+        <div class="items it-2 "  >item2</div>
+        <div class="items" style="background-color: aqua;">item3</div>
+        <div class="items it-4" style="background-color: pink;">item4</div>
+        <div class="items it-5">item5</div>
+        <div class="items it-6">item6</div>
+        <div class="items it-7">item7</div>
+        <div class="items it-8" >item8</div>
+    </div>
+    <h1 class="kk1">Layout-2</h1>
+    <div class="container1">
+        <div class="items no1">1</div>
+        <div class="items no1">2</div>
+        <div class="items no1">3</div>
+        <div class="items no1">4</div>
+        <div class="items no5">5</div> 
+    </div>
+    <h1 class="kk2">Layout-3</h1>
+    <div class="container3">
+        <div class="items numm1">1</div>
+        <div class="items numm2" style="background-color: green;">2</div>
+        <div class="items num1" style="background-color: rgb(189, 55, 194);">3</div>
+        <div class="items num1">4</div>
+
+        <div class="items num1">5</div>
+        <div class="items numm3" style="background-color: rgb(236, 182, 34);">6</div>
+        <div class="items num1">7</div>
+        <div class="items num1">8</div>
+        
+        <!-- <div class="items num1">1</div>
+        <div class="items num1">2</div>
+        <div class="items num1">3</div>
+        <div class="items num1">4</div> -->
+        
+    </div>
+    <h1 class="kk3">Layout-4</h1>
+    <div class="container4">
+        <div class="items nu1"><img src="./thor1.jfif" height="100%" width="100%" alt=""></div>
+        <div class="items nu2" style="background-color: green;
+        grid-column: 2/4;
+        grid-row:1/2 ;
+        
+        "><img src="./deadpool.jfif" height="100%" width="100%" alt=""></div>
+        <div class="items num1" style="background-color: rgb(189, 55, 194);
+        grid-column: 1/2;
+        grid-row:2/4 ;
+        "><img src="./groot1.jfif" height="100%" width="100%" alt=""></div>
+        <div class="items num1"><img src="./doctor.jfif" height="100%" width="100%" alt=""></div>
+
+        <div class="items num1"
+        style="
+        grid-column: 3/4;
+        grid-row:2/4;
+        "><img src="./groot1.jfif" height="100%" width="100%" alt=""></div>
+        <div class="items nu" style="background-color: rgb(236, 182, 34);"><img src="./wanda.jfif" height="100%" width="100%" alt=""></div>
+        
+       
+        
+    </div>
+    <script>
+        const button=document.getElementById('bttn');
+        const head1=document.querySelector('.kk3')
+        const head2=document.querySelector('.kk1')
+        const head3=document.querySelector('.kk2')
+        const head=document.querySelector('.kk')
+        button.addEventListener('click', () => {
+            if(document.body.style.backgroundColor ==='black'){
+            document.body.style.backgroundColor='blue';
+
+
+            } else {
+                document.body.style.backgroundColor='black';
+                head.style.color ='white';
+                head1.style.color ='white';
+                head2.style.color ='white';
+                head3.style.color ='white';
+            }
+        });
+    </script>
+</body>
+</html>
